@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.component {
+    background-color: #E5E5E5;
+    width: 100vw;
+    height: auto;
+    padding: 5vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: 0.12em;
+    overflow: hidden;
+    position: relative;
+}
+.head-p2, .left p, .r-img, .active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.top-head, .one {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.one {
+    display: flex;
+    flex-direction: row;
+}
+.right img, .center img {
+    width: 1.5vw;
+    border-radius: 50%;
+}
+.center {
+    background-color: rgb(167, 52, 52);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: .5rem;
+    width: 2vw;
+    height: 4vh;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center img{}
+.v1 {
+    position: absolute;
+    height: 80%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 15.3%;
+    transform: translate(-15.3%);
+    top: 10%;
+}
+.left {
+    width: 8vw;
+}
+.center, .head-right {
+    width: 2vw;
+    z-index: 1;
+}
+.head-left {
+    width: 9.5vw;
+}
+.right {
+    width: 78vw;
+}
+.r-img img {
+    margin-right: 1rem;
+}
+.top-head {
+    display: flex;
+    flex-direction: row;
+}
+.head-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-right p{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+}
+.active {
+    background-color: #3FB883;
+}
+.default {
+    background-color: rgb(117, 116, 116);    
+}
+.selected {
+    color: #3FB883;
+}
+.a {}
+.b {}
+.c {}
+.d {}
+.e {}
+.f {}
+.g {}
+.h {}
+.i {}
+
+@media screen and (max-width:1000px) {
+    .left p {
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:900px) {
+    .left p {
+        font-size: .6rem;
+    }
+    .v1 {
+        left: 16%;
+        transform: translate(-16%);
+    }
+}
+@media screen and (max-width:600px) {
+    body {
+        font-size: .5rem;
+    }
+    .v1 {
+        top: 5%;
+        left: 17%;
+        transform: translate(-17%);
+    }
+    .head-right p{
+        margin-left: 1rem;
+        padding: .3rem .5rem;
+    }
+    .right img, .center img {
+        width: 3vw;
+    }
+    .center {
+        width: 4vw;
+    }
+}
+@media screen and (max-width:400px) {
+    .v1 {
+        left: 18%;
+        transform: translate(-18%);
+    }
+    .head-right p {
+        margin-left: 1.5rem;
+    }
+}
